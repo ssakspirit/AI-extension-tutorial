@@ -1,0 +1,26 @@
+{
+    "name": "AI-extension-tutorial",
+    "version": "1.0.0",
+    "description": "인공지능 확장 명령블록 사용법 튜토리얼",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "builder": "*",
+        "ai-extension": "github:ssakspirit/AI-extension#master"
+    },
+    "files": [
+        "tutorial.md",
+        "tutorial-examples.md",
+        "README.md",
+        "education.json"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "1.7.25",
+        "targetId": "minecraft"
+    },
+    "supportedTargets": [
+        "minecraft"
+    ],
+    "preferredEditor": "blocksprj"
+}

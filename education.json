@@ -1,0 +1,9 @@
+{
+    "codebuilder": {
+        "canResize": true,
+        "defaulturi": "https://minecraft.makecode.com/#tutorial:github:ssakspirit/AI-extension-tutorial/tutorial"
+    },
+    "commands": {
+        "hiddenFromPlayer": [""]
+    }
+}
