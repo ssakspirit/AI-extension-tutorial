@@ -1,7 +1,7 @@
 {
     "codebuilder": {
         "canResize": true,
-        "defaulturi": "https://minecraft.makecode.com/#tutorial:github:ssakspirit/AI-extension-tutorial/tutorial"
+        "defaulturi": "https://minecraft.makecode.com/#tutorial:github:ssakspirit/AI-extension-tutorial/tutorial-examples"
     },
     "commands": {
         "hiddenFromPlayer": [""]
