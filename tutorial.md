@@ -15,23 +15,11 @@
 
 ``||player:채팅 명령어||`` 블록을 작업 공간에 추가하세요.
 
-```blocks
-player.onChat("감지", function () {
-
-})
-```
-
 ## 단계 2
 
 이제 에이전트 주변의 엔티티를 감지해봅시다.
 
 ``||인공지능:에이전트 주변 반경 감지||`` 블록을 추가하여 반경 3칸 안의 모든 엔티티를 최대 1개 감지합니다.
-
-```blocks
-player.onChat("감지", function () {
-    let target = ai.scanNear(ai.ScanCenter.Agent, ai.ScanTarget.All, 3, 1)
-})
-```
 
 ## 단계 3 @unplugged
 
@@ -51,25 +39,11 @@ player.onChat("감지", function () {
 
 ``||몹:~에게 말하기||`` 블록을 연결하면 감지된 엔티티에게 메시지가 표시됩니다.
 
-```blocks
-player.onChat("감지", function () {
-    let target = ai.scanNear(ai.ScanCenter.Agent, ai.ScanTarget.All, 3, 1)
-    mobs.say(target, "AI가 당신을 감지했습니다!")
-})
-```
-
 ## 단계 5
 
 이번에는 몬스터만 감지하도록 바꿔봅시다.
 
 감지 대상을 **몬스터**로 변경하세요.
-
-```blocks
-player.onChat("감지", function () {
-    let target = ai.scanNear(ai.ScanCenter.Agent, ai.ScanTarget.Monster, 3, 1)
-    mobs.say(target, "위험! 몬스터 발견!")
-})
-```
 
 ## 단계 6 @unplugged
 
@@ -89,30 +63,11 @@ player.onChat("감지", function () {
 
 ``||인공지능:블록 분석 초기화||``와 ``||인공지능:추적 블록 추가||`` 블록을 추가하세요.
 
-```blocks
-player.onChat("분석", function () {
-    ai.resetAnalysis()
-    ai.addTrackedBlock(GRASS)
-    ai.addTrackedBlock(DIRT)
-})
-```
-
 ## 단계 8
 
 반복 블록 안에서 에이전트가 10번 블록을 분석하도록 해봅시다.
 
 ``||loops:반복||`` 블록과 ``||인공지능:에이전트 방향 블록 분석||`` 블록을 추가하세요.
-
-```blocks
-player.onChat("분석", function () {
-    ai.resetAnalysis()
-    ai.addTrackedBlock(GRASS)
-    ai.addTrackedBlock(DIRT)
-    for (let i = 0; i < 10; i++) {
-        ai.analyzeBlocks(ai.AgentDirection.Forward)
-    }
-})
-```
 
 ## 단계 9 @unplugged
 
@@ -129,20 +84,6 @@ player.onChat("분석", function () {
 
 ``||인공지능:전체 추적 개수||``와 ``||인공지능:블록 추적 개수||`` 블록으로 결과를 확인합니다.
 
-```blocks
-player.onChat("분석", function () {
-    ai.resetAnalysis()
-    ai.addTrackedBlock(GRASS)
-    ai.addTrackedBlock(DIRT)
-    for (let i = 0; i < 10; i++) {
-        ai.analyzeBlocks(ai.AgentDirection.Forward)
-    }
-    player.say("전체: " + ai.getTotalBroken())
-    player.say("잔디: " + ai.getBlockCount(GRASS))
-    player.say("흙: " + ai.getBlockCount(DIRT))
-})
-```
-
 ## 단계 11 @unplugged
 
 훌륭합니다! 마지막으로 **에이전트 인벤토리** 관리를 배워봅시다.
@@ -155,23 +96,11 @@ player.onChat("분석", function () {
 
 ``||인공지능:에이전트 인벤토리 정렬||`` 블록을 추가하세요.
 
-```blocks
-player.onChat("정렬", function () {
-    ai.sortAgentInventory()
-})
-```
-
 ## 단계 13
 
 "버리기"라고 채팅하면 에이전트가 가진 흙을 앞에 내려놓도록 해봅시다.
 
 ``||인공지능:에이전트가 방향으로 내려놓기||`` 블록을 추가하세요.
-
-```blocks
-player.onChat("버리기", function () {
-    ai.agentDropItem(ai.AgentDirection.Forward, DIRT)
-})
-```
 
 ## 완료! @unplugged
 
