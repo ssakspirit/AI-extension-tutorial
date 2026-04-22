@@ -63,21 +63,21 @@ https://minecraft.makecode.com/#tutorial:github:ssakspirit/AI-extension-tutorial
 
 ---
 
+## MakeCode에서 확장 직접 추가하기
+
+튜토리얼 없이 일반 프로젝트에서 바로 사용하려면 MakeCode 편집기의 **확장(Extensions)** 버튼을 클릭한 후 검색창에 아래 URL을 입력하세요:
+
+```
+https://github.com/ssakspirit/AI-extension
+```
+
+확장이 추가되면 블록 카테고리에서 **인공지능** 명령 블록을 사용할 수 있습니다.
+
+---
+
 ## AI Extension 소개
 
 이 튜토리얼은 [AI Extension](https://github.com/ssakspirit/AI-extension)을 사용합니다.
-
-### MakeCode에서 확장 추가하기
-
-튜토리얼이 아닌 일반 프로젝트에서 AI Extension을 사용하려면:
-
-1. MakeCode 편집기에서 **확장(Extensions)** 버튼을 클릭합니다
-2. 검색창에 다음 GitHub 저장소 URL을 입력합니다:
-   ```
-   https://github.com/ssakspirit/AI-extension
-   ```
-3. 검색 결과에서 AI Extension을 선택합니다
-4. 확장이 추가되면 블록 카테고리에서 **인공지능** 명령 블록을 사용할 수 있습니다
 
 ---
 
